@@ -9,14 +9,6 @@ function duplicateHashtag($amount) {
 	return $hashtags;
 }
 
-function decreaseHashtags($amount) {
-	$hashtags = $amount;
-	for ($i = ) {
-	
-	}
-
-	return $hashtags;	
-}
 
 // user input
 $number = (int)readline("Enter MAX:");
@@ -29,6 +21,8 @@ for ($i = 1; $i <= $number; $i++) {
 	print "\n";
 }
 
-for () {
-
+for ($i = $number-1; $i >= 1; $i--) {
+	$result = duplicateHashtag($i);
+	print $result;
+	print "\n";
 }
