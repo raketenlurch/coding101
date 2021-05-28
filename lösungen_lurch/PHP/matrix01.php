@@ -9,4 +9,4 @@ function printMatrix($number) {
   }
 }
 
-printMatrix(5);
+printMatrix(7);
