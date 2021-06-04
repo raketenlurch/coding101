@@ -60,6 +60,7 @@ def print_matrix_random_characters(width, height, random_character):
         if i % width == 0:
             print()
 
+
 # user input
 width = int(input("Width:"))
 height = int(input("Height:"))
