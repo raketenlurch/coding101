@@ -16,5 +16,8 @@ def print_loading_bar(percentage):
 
 
 # user input
-load = int(input("Please enter a percentage:"))
-print_loading_bar(load)
+load = int(input("Enter a state:"))
+if load >= 1 and load <= 10:
+    print_loading_bar(load)
+else:
+    print("The number is too big or too low.")
