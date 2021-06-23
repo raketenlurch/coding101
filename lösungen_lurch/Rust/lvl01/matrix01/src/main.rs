@@ -1,0 +1,25 @@
+use std::io::Write;
+
+fn main() {
+    print!("Enter a number: ");
+    std::io::stdout().flush().expect("Nicht geflusht");
+    let number = get_number();
+
+    for i in 1..=number {
+        for i in 1..=number {
+            print!("{}", "#");
+        }
+        print!("\n");
+    }
+}
+
+fn get_number() -> usize {
+    let mut buffer = String::new();
+    let stdin = std::io::stdin();
+
+    stdin.read_line(&mut buffer).expect("BROKEN STDIN");
+
+    let input = buffer.trim();
+
+    input.parse().expect("Peng")
+}
